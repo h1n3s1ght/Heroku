@@ -12,7 +12,7 @@ const PORT = 3000;
     // Dependencies
     //==========
 const mongoose = require('mongoose');
-const db = require('./models')
+const Heroku = require('./models/heroku.js');
 
     //Database connection
     //==============
