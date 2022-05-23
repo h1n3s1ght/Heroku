@@ -12,6 +12,7 @@ const PORT = 3000;
     // Dependencies
     //==========
 const mongoose = require('mongoose');
+const db = require('./models')
 
     //Database connection
     //==============
@@ -63,7 +64,7 @@ app.use(express.urlencoded({ extended: false }));
         //========================
 
 app.get('/heroku', (req, res)=> {
-    
+    res.render('index.ejs');
 })
 
         //========================
